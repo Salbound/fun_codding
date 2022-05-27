@@ -1,0 +1,118 @@
+### Workflow básico e direto para jogar no repositório remoto
+    - git config –global user.name “Seu nome”                           (feito uma vez na vida em máquina não configurada antes)
+    - git config –global user.email “Seu email”                         (feito uma vez na vida em máquina não configurada antes)
+    - git init
+    - git add .
+    - git status
+    - git commit -m "first commit"
+    - git remote add origin https://github.com/USUÁRIO/REPOSITóRIO      (exemplo do reposito 'fun_codding', apenas 1 vez necessário)
+    - git push -u origin main
+
+
+
+### Comandos importantes em um ambiente de trabalho (além do básico que são todos)
+    - git fetch
+    - git merge <nome_do_branch>
+    - git rebase <base> // e também // git pull –rebase
+    - git blame <nome_do_arquivo>                           // importante para adms
+    - git tag -a <nome da tag, ex: v1.1.0>
+    - git diff
+
+
+
+### Comandos git BÁSICO
+
+git clone <URL do seu projeto>
+    - Mesma coisa que o git init. Porém ele cópia todo um repositório remoto para a pasta local.
+
+git ini
+    - Iniciar o git na pasta (se abrir no bash, é preciso dar cd [directório]).
+    @@  git init <O nome do seu repositório>
+        - Você pode criar um repositório novo
+
+git add .
+    - Adicionar os arquivos da pasta (cd) tudo para poder commitar.
+    - Mudar . para nome do 'arquivo'.'extensão' adiciona unitário.
+
+git status
+    - Verificar o status do git. Confirmar se tudo desejado está OK antes de commitar.
+
+git reset
+    - Remove todos os itens do add, caso algum foi adicionado sem querer.
+
+git branch
+    - lista todas as branchs atuais
+    @@ git branch <nome branch nova>
+        - Auto explicativo
+    @@ git branch -d <nome branch a ser deletada>
+        - Auto explicativo
+
+git checkout <nome_do_branch>
+    - Faz com que você mude de branch no seu projeto;
+    @@ git checkout -b <nome_do_branch>
+        - -b faz com que você cria a branch de nome informado, e mude para ela em um só comando \\
+        eliminando assim a necessidade de usar o comando 'git branch <nome nova branch>'
+
+git commit -m "<nome do commit/motivo>"
+    - Commita os códigos adicionado pelo git add para ser atualizado
+
+git remote add <nome, normalmente origin> <url do repositório>
+    - Apontar em qual repositório será adicionado o conteudo remoto (github, gitlab e afim)
+
+git push -u <nome, normalmente origin> <branch destino>
+    - Atualiza nosso repositório remoto com o commit feito recente.
+
+gitr pull <url repositório>
+    - Git pull baixa o conteúdo (não os metadados) do que foi alterado no repositório remoto \\
+     para o seu repositório local e imediatamente atualiza seu contreúdo para a última versão
+
+
+### Comandos git INTERMEDIÁRIO
+
+git fetch
+    - Quando você precisa baixar as mudanças criadas por outros membros do seu projeto colaborativo, \\
+    você precisa do comando Git fetch. A partir desse comando, você irá receber todas as informações \\
+    de commits, para avaliar, antes de aplicar essas alterações na sua versão local do repositório.
+
+git rm <nome_do_arquivo>
+    - Para remover arquivos da sua pasta, você pode utilizar o comando Git rm. (não do add, e sim da pasta)
+
+git merge <nome_do_branch>
+    - Esse comando Git integra as mudanças de dois branches diferentes em um único branch. Ele precisa ser \\
+    iniciado a partir de um branch já selecionado, que será mesclado com outro, com o nome passado por parâmetro.
+
+
+
+### Comandos git AVANÇADO
+
+git rebase <base>
+    - Git rebase a princípio parece fazer o mesmo que um comando git merge: ele integra dois branches \\
+    em um branch único. Porém, esse comando refaz o histórico de commits, tornando-o linear. \\
+    É o mais indicado para consolidar múltiplos branches.
+
+git pull –rebase
+    - Essa é uma variação do comando pull mostrado anteriormente. A partir dessa instrução, \\
+    o Git irá fazer um rebase (não um merge) depois de se utilizar um comando pull.
+
+git cherry-pick <commit-hash>
+    Esse é um comando poderoso que permite selecionar qualquer commit específico de um brach \\
+    e aplicá-lo a outro branch, sem precisar de uma mescla completa. A operação fica adicionada no histórico.
+
+git blame <nome_do_arquivo>
+    O comando “dedo-duro”, blame ajuda a determinar qual usuário realizou qual mudança em um determinado arquivo. \\
+    mostrando usuário, data e horário para cada linha do código do arquivo.
+
+git tag -a <nome da tag, ex: v1.1.0>
+    - Tags são uma boa opção para marcar uma branch e evitar alteração, principalmente em releases públicos.
+
+git diff
+    - Para comparar dois arquivos gits ou dois branches antes de passarem por um commit ou um push, \\
+    é importante executar esse comando Git.
+    @@ git diff HEAD <nome_do_arquivo>
+        - comparando o repositório ativo com o repositório local:
+    @@ git diff <branch de origem> <branch de destino>
+        - comparando duas ramificações.
+
+
+https://www.codigofonte.com.br/artigos/top-25-comandos-do-git
+https://www.youtube.com/watch?v=UBAX-13g8OM&ab_channel=RafaellaBallerini
