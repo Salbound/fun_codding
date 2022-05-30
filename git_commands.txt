@@ -6,7 +6,7 @@
     - git status
     - git commit -m "first commit"
     - git remote add origin https://github.com/USUÁRIO/REPOSITóRIO      (exemplo do reposito 'fun_codding', apenas 1 vez necessário)
-    - git push -u origin main
+    - git push -u origin master
 
 
 
