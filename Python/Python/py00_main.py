@@ -4,6 +4,7 @@ import sys
 from py01_basic_syntax import basicSyntax
 from py02_variable import variable
 from py03_basic_operator import basicOperator
+from py04_decision import decisaoIfElse
 
 def run():
     '''Conceitos básicos de Python, diferença de palavra/texto/paragrafo em uma var string e informar valores de entrada.'''
@@ -32,6 +33,16 @@ def run():
     # oper.comparacao()
     # oper.assignment_operators()
     # oper.identity()
+
+    '''Conceitos básicos sobre tomada de decisões (IF ELIF ELSE).'''
+    # seSenao = decisaoIfElse
+    # seSenao.ifelse()
+    # seSenao.ifelifelse()
+    # seSenao.if_dentroDeIf()
+
+    '''Conceitos básicos de loop (while, for for_dentro_for).'''
+
+
 
 if __name__ == "__main__":
     run()
