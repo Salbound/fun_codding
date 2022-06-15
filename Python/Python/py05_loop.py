@@ -2,7 +2,7 @@
 
 import sys
 
-class loops:
+class Loops:
     def while_enquanto ():
         count = 0
         while (count < 9):

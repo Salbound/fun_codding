@@ -2,7 +2,7 @@
 
 import sys
 
-class decisaoIfElse:
+class DecisaoIfElse:
     def ifelse ():
         var1 = 100
         if var1:

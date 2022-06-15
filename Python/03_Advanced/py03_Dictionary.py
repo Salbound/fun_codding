@@ -77,7 +77,7 @@ print(mydict)
 
 my_dict = {3: 9, 6: 36, 9: 81}
 print(my_dict)
-#print(my_dict[0])                  # erro, pois o index não é número como vertor
+#print(my_dict[0])                  # erro, pois o index não é número como vetor
 print(my_dict[3])
 
 mytuple = (8, 7)

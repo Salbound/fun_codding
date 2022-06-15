@@ -2,7 +2,7 @@
 
 import sys
 
-class basicSyntax:
+class BasicSyntax:
     def string_variables ():
         word = 'word\n'
         sentence = "This is a sentence.\n"

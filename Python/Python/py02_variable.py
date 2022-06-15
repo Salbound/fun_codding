@@ -2,7 +2,7 @@
 
 import sys
 
-class variable:
+class Variable:
     def var_string ():
         str = 'Hello World!'
 

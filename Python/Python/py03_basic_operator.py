@@ -2,7 +2,7 @@
 
 import sys
 
-class basicOperator:
+class BasicOperator:
     def basico ():
         a = 21
         b = 10
